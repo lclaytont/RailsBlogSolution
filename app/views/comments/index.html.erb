@@ -1,0 +1,15 @@
+<h1>Post <%= @post.id %> + Comments</h1>
+<p>ReAd Up On ChEf DeE</p>
+
+<div>
+    <h1><%= @post.title%></h1>
+    <p><%= @post.body %></p>
+    <hr>
+    <h3>Comments</h3>
+    <% @comments.each do |c| %>
+    <div>
+        <p><strong><%= c.title %></strong></p>
+        <p><%= c.body %></p>
+    </div>
+    <% end %>
+</div>
